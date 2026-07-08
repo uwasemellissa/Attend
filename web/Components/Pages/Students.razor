@@ -1,0 +1,47 @@
+@page "/Students"
+@using Microsoft.AspNetCore.SignalR
+<h2>Students</h2>
+<table>
+    <tr>
+        <th>id</th>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>sex</th>
+         <th>Email</th>
+    </tr>
+@foreach(var student in students)
+{
+    <tr>
+        <td>@student.Id</td>
+        <td>@student.Name</td>
+        <td>@student.Phone</td>
+          <td>@student.sex</td>
+            <td>@student.Email</td>
+
+    </tr>
+}
+</table> 
+@code {
+    public class Student{
+        public int Id{get;set;}
+        public string Name { get;set;}
+        public string Phone {get; set;}
+        public string sex {get; set;}
+        public string Email {get; set;}
+    }
+
+    private List<Student> students = new List<Student> ();
+    protected override void OnInitialized()
+    {
+        students= new List<Student> {
+            new Student{Id=1,Email="uwase@gmail.com",Name="Uwase melissa",Phone="078882018",sex="Female"},
+         new Student{Id=1,Email="uwase@gmail.com",Name="Uwase melissq",Phone="078882018",sex="Female"},
+          new Student{Id=1,Email="umutoni@gmail.com",Name="Uwase melissq",Phone="078882018",sex="Female"}
+            };
+    }
+     }
+
+        
+    
+
+
