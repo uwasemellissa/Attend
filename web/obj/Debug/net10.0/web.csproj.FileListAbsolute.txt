@@ -83,3 +83,8 @@ C:\Users\Administrator\training\Attend\Web\obj\Debug\net10.0\refint\web.dll
 C:\Users\Administrator\training\Attend\Web\obj\Debug\net10.0\web.pdb
 C:\Users\Administrator\training\Attend\Web\obj\Debug\net10.0\web.genruntimeconfig.cache
 C:\Users\Administrator\training\Attend\Web\obj\Debug\net10.0\ref\web.dll
+C:\Users\Administrator\training\Attend\web\obj\Debug\net10.0\web.sourcelink.json
+C:\Users\Administrator\training\Attend\web\obj\Debug\net10.0\web.csproj.AssemblyReference.cache
+C:\Users\Administrator\training\Attend\web\bin\Debug\net10.0\Application.dll
+C:\Users\Administrator\training\Attend\web\bin\Debug\net10.0\Application.pdb
+C:\Users\Administrator\training\Attend\web\obj\Debug\net10.0\web.csproj.Up2Date
