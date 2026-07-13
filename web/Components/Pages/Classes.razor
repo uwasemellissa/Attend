@@ -1,50 +1,36 @@
-@page "/classes"
-
-<h3>Class</h3>
-
+@using Domain.Entities
+@using  Application.Services.ClassesServices
+@inject  IClassServices ClassesService
+@page "/CLASSES" 
+<h2>Student</h2>
 <table>
-    
-        <tr>
-            <th>Id</th>
-            <th>Education Level</th>
-            <th>Faculty</th>
-            <th>Department</th>
-        </tr>
-    
+    <tr>
+        <th>Id</th>
+         <th>EducationLevel</th>
+          <th>Faculty</th>
+           <th>Department</th>
+            <th>Session</th>
+    </tr>
 
-    
-        @foreach (var jua in classes)
-        {
+    @foreach(var ClassJua in Classes)
+         
+         {
             <tr>
-                <td>@jua.Id</td>
-                <td>@jua.EducationLevel</td>
-                <td>@jua.Faculty</td>
-                <td>@jua.Department</td>
+                <td>@ClassJua.Id</td>
+                 <td>@ClassJua.EducationLevel</td>
+                  <td>@ClassJua.Faculty</td>
+                   <td>@ClassJua.Department</td>
+                         <td>@ClassJua.Session</td>
             </tr>
-        }
 
+         } 
+    
 </table>
+@code{
+    private List<ClassJua>Classes = new List<ClassJua>();
 
-@code {
-    public class Classjua
-    {
-        public int Id { get; set; }
-        public string EducationLevel { get; set; }
-        public string Faculty { get; set; }
-        public string Department { get; set; }
-    }
-
-
-
-      private List<Classjua> classes = new List<Classjua> ();
     protected override void OnInitialized()
     {
-        classes= new List<Classjua> {
-            new Classjua{Id=1,EducationLevel="AdvancedLevel",Faculty="ComputerScience",Department="ICT"},
-             new Classjua{Id=2,EducationLevel="University",Faculty="Finance",Department="Accountanting"}
-         
-            };
+        Classes=ClassesService.GetAllClasses();
     }
-     }
-
-    
+}

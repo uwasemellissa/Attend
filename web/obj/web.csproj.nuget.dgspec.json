@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrator\\training\\Attend\\web\\web.csproj": {}
+    "C:\\Users\\Administrator\\training\\Attend\\Web\\web.csproj": {}
   },
   "projects": {
     "C:\\Users\\Administrator\\training\\Attend\\Core\\Application\\Application.csproj": {
@@ -690,14 +690,14 @@
         }
       }
     },
-    "C:\\Users\\Administrator\\training\\Attend\\web\\web.csproj": {
+    "C:\\Users\\Administrator\\training\\Attend\\Web\\web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\training\\Attend\\web\\web.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\training\\Attend\\Web\\web.csproj",
         "projectName": "web",
-        "projectPath": "C:\\Users\\Administrator\\training\\Attend\\web\\web.csproj",
+        "projectPath": "C:\\Users\\Administrator\\training\\Attend\\Web\\web.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\training\\Attend\\web\\obj\\",
+        "outputPath": "C:\\Users\\Administrator\\training\\Attend\\Web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
