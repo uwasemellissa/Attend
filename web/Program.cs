@@ -1,8 +1,11 @@
 using   Application.Services.StudentServices;
 using Application.Services.ClassesServices;
+using Infrastructure.Repositories;
+using Infrastructure.DependencyInjection;
 
 
 using web.Components;
+using Application.Interfaces;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,8 +14,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
     
+    //registering service
     builder.Services.AddScoped<IStudentService , StudentService>();
     builder.Services.AddScoped<IClassServices , ClassesService>();
+    builder.Services.AddInfrastructureService(builder.Configuration);
     
 
 var app = builder.Build();
